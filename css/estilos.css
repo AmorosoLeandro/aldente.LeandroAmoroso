@@ -1,0 +1,310 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos del body */
+
+.contenedorPrincipal {
+    background-color: rgb(250, 250, 225);
+}
+
+
+/* estilos del header */
+
+header {
+    background-color: rgb(166, 110, 4);
+    opacity: 50%;
+
+}
+
+
+header .barraNavegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .barraNavegacion nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .barraNavegacion nav ul li {
+    margin: 0.4rem;
+    font-weight: bold;
+}
+
+header .barraNavegacion nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: whitesmoke
+}
+
+/* estilos del main */
+
+.mainHome {
+    font-family: 'Cinzel', serif;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.5fr 0.8fr 0.8fr 0.8fr 0.5fr;
+    grid-template-areas: "encabezado""imgHomeUno""textoHomeUno""imgHomeDos""textoHomeDos";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+
+}
+
+main .encabezado {
+    grid-area: encabezado;
+
+}
+
+main .encabezado .encabezadoTitulo {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+main .encabezado .encabezadoSubtitulo {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+main .imgHomeUno {
+    grid-area: imgHomeUno;
+
+
+}
+
+main .textoHomeUno {
+    grid-area: textoHomeUno;
+    text-align: center;
+    font-size: 1rem;
+    margin: 1rem;
+    width: 350px;
+}
+
+main .imgHomeDos {
+    grid-area: imgHomeDos;
+
+}
+
+main .textoHomeDos {
+    grid-area: textoHomeDos;
+    text-align: center;
+    font-size: 1rem;
+    margin: 1rem;
+    width: 350px;
+}
+
+/* estilos del footer */
+
+.footerGeneral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerGeneral .redes {
+    margin: 1.5rem;
+
+}
+
+.footerGeneral .redes .aRedes {
+    margin: 1rem;
+}
+
+/* estilos contenido productos */
+
+.mainProductos {
+    font-family: 'Cinzel', serif;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "encabezado""contenedorRavioles""contenedorÑoquis""contenedorTallarines""contenedorFusilli";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.mainProductos .contenedorRavioles {
+    grid-area: contenedorRavioles;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainProductos .contenedorÑoquis {
+    grid-area: contenedorÑoquis;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainProductos .contenedorTallarines {
+    grid-area: contenedorTallarines;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainProductos .contenedorFusilli {
+    grid-area: contenedorFusilli;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainProductos h2 {
+    text-align: center;
+}
+
+.textoRavioles {
+    display: none;
+    width: 35rem;
+}
+
+.textoÑoquis {
+    display: none;
+    width: 35rem;
+}
+
+.textoTallarines {
+    display: none;
+    width: 35rem;
+}
+
+.textoFusilli {
+    display: none;
+    width: 35rem;
+}
+
+.mainProductos .verMas {
+    display: flex;
+    justify-content: right;
+
+}
+
+.mainProductos .verMas a {
+    text-decoration: none;
+    border: solid;
+    border-color: rgb(166, 110, 4);
+    border-radius: 3rem;
+    padding: 0.3rem;
+    font-weight: bold;
+    color: rgb(166, 110, 4);
+
+}
+
+/* estilos de contacto */
+
+.mainContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainContacto .formulario {
+    width: 350px;
+    background-color: rgb(242, 196, 112);
+    padding: 1rem;
+    border-radius: 30px;
+    margin: 1rem;
+}
+
+.mainContacto .mapaUbi {
+    border-radius: 30px;
+    margin: 1rem;
+}
+
+
+/* MEDIA QUERIS */
+
+@media screen and (min-width: 600px) {
+
+    /*modificaciones del header*/
+
+    .fondoHeader {
+        background-color: rgb(250, 250, 225);
+        height: 10rem;
+    }
+
+    header {
+        background-image: url(../imagenes/platospresentacionok.jpg);
+        height: 10rem;
+        width: 100%;
+        position: fixed;
+        opacity: 0.8;
+
+
+    }
+
+
+    header .barraNavegacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header .barraNavegacion nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    header .barraNavegacion nav ul li {
+        margin: 0.4rem;
+        font-weight: bold;
+    }
+
+    header .barraNavegacion nav ul li a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: whitesmoke
+    }
+
+    /* estilos del main productos*/
+
+
+
+
+
+    .textoRavioles {
+        display: flex;
+        text-align: center;
+
+    }
+
+    .textoÑoquis {
+        display: flex;
+        text-align: center;
+    }
+
+    .textoTallarines {
+        display: flex;
+        text-align: center;
+    }
+
+    .textoFusilli {
+        display: flex;
+        text-align: center;
+    }
+
+    .mainProductos .verMas {
+        display: none;
+        text-align: center;
+
+    }
+
+
+
+}

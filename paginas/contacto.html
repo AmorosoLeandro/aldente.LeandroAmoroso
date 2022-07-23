@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--C S S-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Cinzel&family=Jua&display=swap"
+        rel="stylesheet">
+
+    <title> ALDente</title>
+</head>
+<!--ESTE ES EL HTML DE HOME-->
+
+<body>
+    <div class="contenedorPrincipal">
+        <header>
+            <div class="barraNavegacion">
+                <!--PUSE UN ÑOQUI PARA REPRESENTAR AL LOGO, CUANDO LO TENGA VA A IR CON EL NOMBRE TAMBIEN-->
+                <img class="logo" src="../imagenes/logo.png" alt="ñoqui">
+
+
+                <!--INICIO DE BARRA DE NAVEGACION-->
+                <nav class="barraNavegacion__menu">
+                    <ul>
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="historia.html">Historia</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="fondoHeader">
+            
+        </div>
+        <main class="mainContacto">
+            <div class="encabezado">
+                <H1 class="encabezadoTitulo">
+                    Contacto
+                </H1>
+                <p class="encabezadoSubtitulo">
+                    Nuestras formas de contacto.
+                </p>
+            </div>
+            <!-- INICIO DE FORMULARIO-->
+            <form action="">
+                <div class="formulario">
+                    <div>
+                        <input class="input__texto" type="text" id="nombre" name="nombre"
+                            placeholder="Complete con su nombre">
+                        <input class="input__texto" type="text" id="apellido" name="apellido"
+                            placeholder="Complete con su apellido">
+                    </div>
+                    <div>
+                        <label for="sexo"> Seleccione sexo</label>
+                        <input type="radio" id="sexomasculino" name="sexo" value="masculino">
+                        <label for="sexomasculino">Masculino</label>
+                        <input type="radio" id="sexofemenino" name="sexo" value="femenino">
+                        <label for="sexofemenino">Femenino</label><br>
+                        <input type="radio" id="otro" name="sexo" value="otro">
+                        <label for="otro">Otro</label>
+                    </div>
+                    <div>
+                        <input class="input__texto" type="email" name="correo" placeholder="Complete con su e-mail">
+                    </div>
+                    <div>
+                        <input class="input__texto--comentario" type="text" name="comentario"
+                            placeholder="Deje su comentario aqui">
+                    </div>
+                    <div>
+                        <input type="submit" name="enviarconsulta" placeholder="Enviar Consulta">
+                        <input type="reset" name="borrar" placeholder="Reset">
+                    </div>
+                </div>
+            </form>
+            <!-- NO ES LA UBICACION REAL PERO LO PUSE A MODO DE PRUEBA -->
+            <iframe class="mapaUbi"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.9831678405067!2d-58.49965288425417!3d-34.553981562376144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6e6287d72b9%3A0x220431a7ddae8b92!2sAv.%20Dr.%20Ricardo%20Balb%C3%ADn%2C%20C1430%20CABA!5e0!3m2!1ses-419!2sar!4v1655845462196!5m2!1ses-419!2sar"
+                width="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </main>
+        <footer class="footerGeneral">
+            <div class="redes">
+                <a class="aRedes" href="https://www.instagram.com/">
+                    <img class="logoRedes" src="../imagenes/instagramlogo.png" alt="instagramlogo">
+                </a>
+                <a class="aRedes" href="https://www.facebook.com/">
+                    <img class="logoRedes" src="../imagenes/facebooklogo.png" alt="facebooklogo">
+                </a>
+                <a class="aRedes" href="https://www.youtube.com/">
+                    <img class="logoRedes" src="../imagenes/youtubelogo.png" alt="youtubelogo">
+                </a>
+                <a class="aRedes" href="https://www.whatsapp.com/">
+                    <img class="logoRedes" src="../imagenes/whatsapplogo.png" alt="whatsapplogo">
+                </a>
+            </div>
+            <p class="derechos">
+                Todos los derechos reservados.
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
