@@ -225,7 +225,7 @@ main .textoHomeDos {
 
 /* MEDIA QUERIS */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 769px) {
 
     /*modificaciones del header*/
 
@@ -252,7 +252,7 @@ main .textoHomeDos {
         align-items: center;
     }
 
-    header .barraNavegacion nav ul {
+    header .barraNavegacion nav div div ul {
         list-style: none;
         display: flex;
         justify-content: center;
@@ -261,12 +261,12 @@ main .textoHomeDos {
 
     }
 
-    header .barraNavegacion nav ul li {
+    header .barraNavegacion nav div div ul li {
         margin: 0.4rem;
         font-weight: bold;
     }
 
-    header .barraNavegacion nav ul li a {
+    header .barraNavegacion nav div div ul li a {
         text-decoration: none;
         font-size: 1rem;
         color: whitesmoke
