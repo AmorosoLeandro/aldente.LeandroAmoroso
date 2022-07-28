@@ -1,0 +1,102 @@
+//comentario sin que se vea en el css
+/* comentario en sas y css */
+
+@import "utilities/nosotros";
+@import "utilities/productos";
+@import "utilities/historia";
+@import "utilities/contacto";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos del body */
+
+.contenedorPrincipal {
+    background-color: rgb(250, 250, 225);
+    /* estilos del header */
+    header{
+        background-color: rgb(166, 110, 4);
+    opacity: 50%;
+    .barraNavegacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li {
+                margin: 0.4rem;
+                font-weight: bold;
+                a {
+                    text-decoration: none;
+                    font-size: 1rem;
+                    color: whitesmoke
+                }
+            }
+        }
+    }
+}
+/* estilos del main */
+.mainHome {
+    font-family: 'Cinzel', serif;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.5fr 0.8fr 0.8fr 0.8fr 0.5fr;
+    grid-template-areas: "encabezado""imgHomeUno""textoHomeUno""imgHomeDos""textoHomeDos";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    .encabezado {
+        grid-area: encabezado;
+        .encabezadoTitulo {
+            text-align: center;
+            font-size: 3rem;
+            margin: 1rem;            
+        }
+        .encabezadoSubtitulo {
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 1rem;
+        }
+    }
+    .imgHomeUno {
+        grid-area: imgHomeUno;
+    }
+    .textoHomeUno {
+        grid-area: textoHomeUno;
+        text-align: center;
+        font-size: 1rem;
+        margin: 1rem;
+        width: 350px;
+    }
+    .imgHomeDos {
+        grid-area: imgHomeDos;
+    }
+    .textoHomeDos {
+        grid-area: textoHomeDos;
+        text-align: center;
+        font-size: 1rem;
+        margin: 1rem;
+        width: 350px;
+    }
+}
+/* estilos del footer */
+.footerGeneral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footerGeneral .redes {
+        margin: 1.5rem;
+        .footerGeneral .redes .aRedes {
+            margin: 1rem;
+        }
+    }
+}
+}
